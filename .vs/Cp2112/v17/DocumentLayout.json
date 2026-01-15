@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-9012-CDEF-123456789012}|Examples\\Examples.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\examples\\exampleusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-9012-CDEF-123456789012}|Examples\\Examples.csproj|solutionrelative:examples\\exampleusage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|ConsoleDemo\\ConsoleDemo.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\consoledemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|ConsoleDemo\\ConsoleDemo.csproj|solutionrelative:consoledemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\cp2112device\\cp2112device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|solutionrelative:cp2112device\\cp2112device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3D4E5F6-A7B8-9012-CDEF-123456789012}|Examples\\Examples.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\examples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3D4E5F6-A7B8-9012-CDEF-123456789012}|Examples\\Examples.csproj|solutionrelative:examples\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\cp2112device\\native\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|solutionrelative:cp2112device\\native\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\cp2112device\\exceptions\\cp2112exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|solutionrelative:cp2112device\\exceptions\\cp2112exception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\cp2112device\\models\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}|Cp2112Device\\Cp2112Device.csproj|solutionrelative:cp2112device\\models\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|ConsoleDemo\\ConsoleDemo.csproj|d:\\a04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\demo_to_convert\\src\\slabhiddevice.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{B2C3D4E5-F6A7-8901-BCDE-F12345678901}|ConsoleDemo\\ConsoleDemo.csproj|solutionrelative:demo_to_convert\\src\\slabhiddevice.dll||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DeviceState.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Models\\DeviceState.cs",
+              "RelativeDocumentMoniker": "Cp2112Device\\Models\\DeviceState.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Models\\DeviceState.cs",
+              "RelativeToolTip": "Cp2112Device\\Models\\DeviceState.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAUwDcAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T06:37:27.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cp2112Device.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Cp2112Device.cs",
+              "RelativeDocumentMoniker": "Cp2112Device\\Cp2112Device.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Cp2112Device.cs",
+              "RelativeToolTip": "Cp2112Device\\Cp2112Device.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAswBgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T06:36:05.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NativeMethods.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Native\\NativeMethods.cs",
+              "RelativeDocumentMoniker": "Cp2112Device\\Native\\NativeMethods.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Native\\NativeMethods.cs",
+              "RelativeToolTip": "Cp2112Device\\Native\\NativeMethods.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAAAGoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T06:32:40.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Examples\\Program.cs",
+              "RelativeDocumentMoniker": "Examples\\Program.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Examples\\Program.cs",
+              "RelativeToolTip": "Examples\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T05:55:35.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\ConsoleDemo\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleDemo\\Program.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\ConsoleDemo\\Program.cs",
+              "RelativeToolTip": "ConsoleDemo\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwGIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T01:08:40.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SLABHIDDevice.dll",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\demo_to_convert\\src\\SLABHIDDevice.dll",
+              "RelativeDocumentMoniker": "demo_to_convert\\src\\SLABHIDDevice.dll",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\demo_to_convert\\src\\SLABHIDDevice.dll",
+              "RelativeToolTip": "demo_to_convert\\src\\SLABHIDDevice.dll",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001697|",
+              "WhenOpened": "2026-01-15T01:08:40.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cp2112Exception.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Exceptions\\Cp2112Exception.cs",
+              "RelativeDocumentMoniker": "Cp2112Device\\Exceptions\\Cp2112Exception.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Cp2112Device\\Exceptions\\Cp2112Exception.cs",
+              "RelativeToolTip": "Cp2112Device\\Exceptions\\Cp2112Exception.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAlwDsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T00:47:54.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExampleUsage.cs",
+              "DocumentMoniker": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Examples\\ExampleUsage.cs",
+              "RelativeDocumentMoniker": "Examples\\ExampleUsage.cs",
+              "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Examples\\ExampleUsage.cs",
+              "RelativeToolTip": "Examples\\ExampleUsage.cs",
+              "ViewState": "AgIAAAkCAAAAAAAAAAAuwBYCAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T00:44:44.852Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+ 我需要包装一组设备控制的C语言DLL，用于WPF应用。
+
+**硬件库信息：**
+- DLL1: "convert_C_to_CS\demo_to_convert\src\SLABHIDDevice.dll"
+- DLL2: "convert_C_to_CS\demo_to_convert\src\SLABHIDtoSMBus.dll"
+- LIB: "convert_C_to_CS\demo_to_convert\lib\SLABHIDtoSMBus.lib"
+- 功能: USB设备控制、数据读写
+
+**头文件：**
+- 位于该路径下"D:\A04_others\source_code\c\cable\cp2112\convert_C_to_CS\demo
+_to_convert\include"
+
+**C语言库文件 **
+- "convert_C_to_CS\demo_to_convert\src\smbus.c"
+
+**C语言demo文件**
+- "convert_C_to_CS\demo_to_convert\src\cp2112_demo.c"
+
+**C#要求：**
+1. 生成设备控制器类，实现IDisposable
+2. 将C回调转换为C#事件
+3. 提供异步操作方法
+4. 包含设备状态机
+5. 错误处理和重试机制
+6. 资源清理确保设备正确关闭
+7. 支持多实例（多设备）
+8. 提供连接状态监控
+9. 包含超时控制
+10. 线程安全的方法调用

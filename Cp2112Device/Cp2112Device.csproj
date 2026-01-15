@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Version>1.0.0</Version>
+    <Authors>Your Name</Authors>
+    <Description>CP2112 SMBus Device Wrapper for .NET/WPF</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\demo_to_convert\src\SLABHIDDevice.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SLABHIDDevice.dll</Link>
+    </None>
+    <None Include="..\demo_to_convert\src\SLABHIDtoSMBus.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SLABHIDtoSMBus.dll</Link>
+    </None>
+  </ItemGroup>
+
+</Project>

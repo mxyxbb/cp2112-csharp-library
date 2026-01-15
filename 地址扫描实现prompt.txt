@@ -1,0 +1,9 @@
+[DllImport(DLL_NAME, CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Ansi)]
+        public static extern int HidSmbus_ReadRequest(
+            IntPtr device,
+            byte slaveAddress,
+            ushort numBytesToRead);
+我在Cp2112Device/Native/NativeMethods.cs当中载入了新的接口函数，希望在Cp2112Device/Cp2112Device.cs中，增加一个函数，ReadSlaveInternal，传入参数为byte slaveAddress, ushort numBytesToRead。
+增加的函数要符合类库中其它函数风格，如ReadInternal的风格。ReadInternal中，将HidSmbus_AddressReadRequest接口替换为HidSmbus_ReadRequest，即可实现ReadSlaveInternal。
+ReadSlaveInternal应该进一步封装为ReadSlaveAsync，作为是public method。
+最后在example中补充example7，具体方法是使用ReadSlaveAsync(addr,1)，扫描从0x03<<1至0x7F<<1的地址，不需要检查读取到的数值，只需判断读取函数是否抛出数据异常，无异常则认为该地址上有设备，有异常则认为该地址上没有设备。

@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cp2112Device</name>
+    </assembly>
+    <members>
+        <member name="T:Cp2112Sdk.Cp2112Device">
+            <summary>
+            CP2112 SMBus Device Controller
+            Thread-safe, disposable device controller with async support
+            </summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112Device.StateChanged">
+            <summary>Event raised when device state changes</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112Device.DataReceived">
+            <summary>Event raised when data is received</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112Device.DataSent">
+            <summary>Event raised when data is sent</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112Device.ErrorOccurred">
+            <summary>Event raised when an error occurs</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112Device.TransferStatusChanged">
+            <summary>Event raised when transfer status changes</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.State">
+            <summary>Current device state</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.DeviceNumber">
+            <summary>Device number</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.VendorId">
+            <summary>Vendor ID</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.ProductId">
+            <summary>Product ID</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.SerialNumber">
+            <summary>Serial number</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.IsOpen">
+            <summary>Is device open</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.IsReady">
+            <summary>Is device ready for operations</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112Device.Configuration">
+            <summary>Current configuration</summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.#ctor">
+            <summary>
+            Create a new CP2112 device instance
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.#ctor(System.UInt16,System.UInt16)">
+            <summary>
+            Create a new CP2112 device instance with specific VID/PID
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.OpenAsync(System.Threading.CancellationToken)">
+            <summary>
+            Open the device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.CloseAsync">
+            <summary>
+            Close the device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ConfigureAsync(Cp2112Sdk.Models.SmbusConfig,System.Threading.CancellationToken)">
+            <summary>
+            Configure the device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ResetAsync(System.Threading.CancellationToken)">
+            <summary>
+            Reset the device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ReadAsync(System.Byte,System.UInt16,System.Byte,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Read data from SMBus device asynchronously
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ReadAsync(System.Byte,System.UInt16,System.Byte,System.Threading.CancellationToken)">
+            <summary>
+            Read data from SMBus device with 1-byte address
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ReadSlaveAsync(System.Byte,System.UInt16,System.Threading.CancellationToken)">
+            <summary>
+            Read data from SMBus slave device without target address
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.WriteAsync(System.Byte,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Write data to SMBus device asynchronously
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.WriteRegisterAsync(System.Byte,System.Byte,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Write register address and data to SMBus device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ReadUInt16Async(System.Byte,System.Byte,System.Threading.CancellationToken)">
+            <summary>
+            Read 16-bit value from register
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.ReadInt16Async(System.Byte,System.Byte,System.Threading.CancellationToken)">
+            <summary>
+            Read 16-bit signed value from register
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.WriteUInt16Async(System.Byte,System.Byte,System.UInt16,System.Threading.CancellationToken)">
+            <summary>
+            Write 16-bit value to register
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.GetDeviceInfo">
+            <summary>
+            Get device information
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.GetConfigAsync(System.Threading.CancellationToken)">
+            <summary>
+            Get SMBus configuration
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112Device.Dispose">
+            <summary>
+            Dispose the device and release resources
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Cp2112DeviceManager">
+            <summary>
+            Device manager for handling multiple CP2112 devices
+            </summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112DeviceManager.DeviceAdded">
+            <summary>Event raised when a device is added</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112DeviceManager.DeviceRemoved">
+            <summary>Event raised when a device is removed</summary>
+        </member>
+        <member name="E:Cp2112Sdk.Cp2112DeviceManager.DeviceListChanged">
+            <summary>Event raised when device list changes</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112DeviceManager.DeviceCount">
+            <summary>Number of managed devices</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112DeviceManager.Item(System.UInt32)">
+            <summary>Get device by number</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Cp2112DeviceManager.Devices">
+            <summary>Get all managed devices</summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.#ctor">
+            <summary>
+            Create device manager with default VID/PID
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.#ctor(System.UInt16,System.UInt16)">
+            <summary>
+            Create device manager with specific VID/PID
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.ScanDevicesAsync(System.Threading.CancellationToken)">
+            <summary>
+            Scan for available devices
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.OpenDeviceAsync(System.UInt32,Cp2112Sdk.Models.SmbusConfig,System.Threading.CancellationToken)">
+            <summary>
+            Open and manage a specific device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.OpenAllDevicesAsync(Cp2112Sdk.Models.SmbusConfig,System.Threading.CancellationToken)">
+            <summary>
+            Open all available devices
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.CloseDeviceAsync(System.UInt32)">
+            <summary>
+            Close and remove a specific device
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.CloseAllDevicesAsync">
+            <summary>
+            Close all devices
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.GetDeviceBySerial(System.String)">
+            <summary>
+            Get device by serial number
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.IsDeviceManaged(System.UInt32)">
+            <summary>
+            Check if a device is managed
+            </summary>
+        </member>
+        <member name="M:Cp2112Sdk.Cp2112DeviceManager.GetDeviceSerialNumbers">
+            <summary>
+            Get all device serial numbers
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.DeviceEventArgs">
+            <summary>
+            Event arguments for device manager events
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Events.DeviceStateEventArgs">
+            <summary>
+            Event arguments for device state changes
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Events.DataReceivedEventArgs">
+            <summary>
+            Event arguments for data received events
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Events.DataSentEventArgs">
+            <summary>
+            Event arguments for data sent events
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Events.ErrorEventArgs">
+            <summary>
+            Event arguments for error events
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Events.TransferStatusEventArgs">
+            <summary>
+            Event arguments for transfer status changes
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.Cp2112Exception">
+            <summary>
+            Base exception for CP2112 device errors
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.DeviceNotFoundException">
+            <summary>
+            Exception thrown when device is not found
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.InvalidHandleException">
+            <summary>
+            Exception thrown when device handle is invalid
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.InvalidParameterException">
+            <summary>
+            Exception thrown when a parameter is invalid
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.ReadException">
+            <summary>
+            Exception thrown when a read operation fails
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.ReadTimeoutException">
+            <summary>
+            Exception thrown when a read operation times out
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.WriteException">
+            <summary>
+            Exception thrown when a write operation fails
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.WriteTimeoutException">
+            <summary>
+            Exception thrown when a write operation times out
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.DeviceIOException">
+            <summary>
+            Exception thrown when device I/O fails
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Exceptions.DeviceAccessException">
+            <summary>
+            Exception thrown when device operation fails
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Models.DeviceState">
+            <summary>
+            Device connection state
+            </summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Closed">
+            <summary>Device is closed and not initialized</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Opening">
+            <summary>Device is opening</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Open">
+            <summary>Device is open and ready</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Configured">
+            <summary>Device is configured</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Busy">
+            <summary>Device is busy transferring data</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Error">
+            <summary>Device has encountered an error</summary>
+        </member>
+        <member name="F:Cp2112Sdk.Models.DeviceState.Closing">
+            <summary>Device is closing</summary>
+        </member>
+        <member name="T:Cp2112Sdk.Models.SmbusConfig">
+            <summary>
+            SMBus configuration parameters
+            </summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.BitRate">
+            <summary>Bit rate in Hz (default: 100kHz)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.AckAddress">
+            <summary>ACK address (default: 0x02)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.AutoReadRespond">
+            <summary>Auto read respond (default: false)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.WriteTimeout">
+            <summary>Write timeout in ms (default: 10ms)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.ReadTimeout">
+            <summary>Read timeout in ms (default: 10ms)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.SclLowTimeout">
+            <summary>SCL low timeout (default: true)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.TransferRetries">
+            <summary>Transfer retries (default: 1)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.ResponseTimeout">
+            <summary>Response timeout in ms (default: 100ms)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.Default">
+            <summary>Create default configuration</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.HighSpeed">
+            <summary>Create high-speed configuration (400kHz)</summary>
+        </member>
+        <member name="P:Cp2112Sdk.Models.SmbusConfig.LowSpeed">
+            <summary>Create low-speed configuration (10kHz)</summary>
+        </member>
+        <member name="T:Cp2112Sdk.Models.DeviceInfo">
+            <summary>
+            Device information
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Models.TransferStatus">
+            <summary>
+            Transfer status
+            </summary>
+        </member>
+        <member name="T:Cp2112Sdk.Native.NativeMethods">
+            <summary>
+            P/Invoke declarations for SLABHIDtoSMBus.dll
+            </summary>
+        </member>
+    </members>
+</doc>
