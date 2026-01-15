@@ -54,8 +54,7 @@
               "RelativeToolTip": "Cp2112Device\\Models\\DeviceState.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAAUwDcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T06:37:27.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T06:37:27.954Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "Cp2112Device\\Cp2112Device.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAswBgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T06:36:05.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T06:36:05.227Z"
             },
             {
               "$type": "Document",
@@ -80,8 +78,7 @@
               "RelativeToolTip": "Cp2112Device\\Native\\NativeMethods.cs",
               "ViewState": "AgIAAKwAAAAAAAAAAAAAAGoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T06:32:40.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T06:32:40.479Z"
             },
             {
               "$type": "Document",
@@ -93,8 +90,7 @@
               "RelativeToolTip": "Examples\\Program.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAQwDQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T05:55:35.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T05:55:35.475Z"
             },
             {
               "$type": "Document",
@@ -106,8 +102,7 @@
               "RelativeToolTip": "ConsoleDemo\\Program.cs",
               "ViewState": "AgIAAFIAAAAAAAAAAAAQwGIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T01:08:40.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T01:08:40.914Z"
             },
             {
               "$type": "Document",
@@ -130,8 +125,7 @@
               "RelativeToolTip": "Cp2112Device\\Exceptions\\Cp2112Exception.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAlwDsAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-15T00:47:54.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-15T00:47:54.823Z"
             },
             {
               "$type": "Document",
@@ -141,7 +135,7 @@
               "RelativeDocumentMoniker": "Examples\\ExampleUsage.cs",
               "ToolTip": "D:\\A04_others\\source_code\\misc\\dotnet_proj1\\cp2112_cs_example\\Examples\\ExampleUsage.cs",
               "RelativeToolTip": "Examples\\ExampleUsage.cs",
-              "ViewState": "AgIAAAkCAAAAAAAAAAAuwBYCAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYCAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-15T00:44:44.852Z",
               "EditorCaption": ""
