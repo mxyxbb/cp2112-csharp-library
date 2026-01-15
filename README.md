@@ -40,8 +40,8 @@ convert_C_to_CS/
 ### 1. 基本使用
 
 ```csharp
-using Cp2112Device;
-using Cp2112Device.Models;
+using Cp2112Sdk;
+using Cp2112Sdk.Models;
 
 // 创建设备实例
 using var device = new Cp2112Device();
